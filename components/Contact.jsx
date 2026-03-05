@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer'
 import { useState } from 'react'
 
 export default function Contact() {
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://portfolio-backend-24m3.onrender.com/api/contact"
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://portfolio-backend-1-g8kh.onrender.com/api/contact"
   const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true })
   const [form, setForm] = useState({ name: '', email: '', message: '' })
   const [sent, setSent] = useState(false)
