@@ -4,16 +4,16 @@ import { useInView } from 'react-intersection-observer'
 
 const skillCategories = [
   {
-    title: 'AI / Machine Learning',
+    title: 'Machine Learning & AI',
     icon: '🧠',
     color: '#00f5ff',
     skills: [
-      { name: 'PyTorch', level: 88 },
+      { name: 'LLMs & Prompt Eng.', level: 92 },
+      { name: 'LangChain & LangGraph', level: 90 },
+      { name: 'RAG & Vector Embeddings', level: 90 },
+      { name: 'NLP & Deep Learning', level: 85 },
       { name: 'TensorFlow / Keras', level: 82 },
-      { name: 'LLMs & Prompt Eng.', level: 90 },
-      { name: 'RAG & Embeddings', level: 88 },
-      { name: 'NLP', level: 80 },
-      { name: 'Computer Vision', level: 75 },
+      { name: 'Scikit-learn & NLTK', level: 85 },
     ],
   },
   {
@@ -21,43 +21,46 @@ const skillCategories = [
     icon: '⚙️',
     color: '#7c3aed',
     skills: [
-      { name: 'Django / DRF', level: 90 },
-      { name: 'FastAPI', level: 80 },
-      { name: 'REST APIs', level: 92 },
-      { name: 'Microservices', level: 75 },
-      { name: 'Node.js / Express', level: 78 },
+      { name: 'Django / DRF', level: 92 },
+      { name: 'FastAPI', level: 88 },
+      { name: 'REST APIs & Microservices', level: 92 },
+      { name: 'PostgreSQL & MySQL', level: 88 },
+      { name: 'Relational DB Architecture', level: 86 },
     ],
   },
   {
-    title: 'Frontend',
+    title: 'Frontend & UI',
     icon: '🎨',
     color: '#39ff14',
     skills: [
-      { name: 'React.js', level: 88 },
-      { name: 'Next.js', level: 85 },
-      { name: 'JavaScript', level: 86 },
-      { name: 'Tailwind CSS', level: 88 },
+      { name: 'React.js', level: 90 },
+      { name: 'Next.js', level: 88 },
+      { name: 'JavaScript (ES6+)', level: 88 },
+      { name: 'Tailwind CSS', level: 90 },
     ],
   },
   {
-    title: 'DevOps & Cloud',
+    title: 'MLOps & Cloud',
     icon: '☁️',
     color: '#f59e0b',
     skills: [
-      { name: 'Docker', level: 80 },
-      { name: 'CI/CD', level: 82 },
-      { name: 'Azure', level: 70 },
-      { name: 'Git / GitHub', level: 92 },
+      { name: 'Docker & Containerization', level: 88 },
+      { name: 'Model Deployment', level: 85 },
+      { name: 'CI/CD Pipelines', level: 85 },
+      { name: 'Azure & Cloud Platforms', level: 78 },
+      { name: 'Git & GitHub', level: 92 },
     ],
   },
 ]
 
 const allTags = [
-  'Python', 'JavaScript', 'SQL', 'Deep Learning', 'Feature Engineering',
-  'Model Evaluation', 'Time-Series', 'OpenCV', 'NLTK', 'Scikit-learn',
-  'NumPy', 'Pandas', 'Matplotlib', 'MySQL', 'NoSQL', 'MongoDB',
-  'Vector Search', 'Inference Optimization', 'Performance Monitoring',
-  'LangChain', 'OpenAI API', 'Gemini API',
+  'Python', 'JavaScript', 'SQL', 'Large Language Models (LLMs)', 'LangGraph',
+  'LangChain', 'RAG', 'Vector Embeddings', 'Prompt Engineering', 'NLP',
+  'Deep Learning', 'TensorFlow', 'Keras', 'Scikit-learn', 'NLTK',
+  'Django', 'Django REST Framework (DRF)', 'FastAPI', 'REST APIs', 'Microservices',
+  'React.js', 'Next.js', 'PostgreSQL', 'MySQL', 'Relational Databases',
+  'Docker', 'Model Deployment', 'Azure', 'Git', 'GitHub', 'CI/CD',
+  'OpenAI API', 'Gemini API',
 ]
 
 function SkillBar({ skill, color, inView, delay }) {

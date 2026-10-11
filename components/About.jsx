@@ -14,8 +14,8 @@ const highlights = [
     ),
   },
   {
-    label: 'Education',
-    value: 'B.Tech CSE (AI/ML), DCE',
+    label: 'Degree',
+    value: 'Bachelor of Technology',
     icon: (
       <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/>
@@ -24,11 +24,11 @@ const highlights = [
     ),
   },
   {
-    label: 'CGPA',
-    value: '7.0 / 10',
+    label: 'College',
+    value: 'Dronacharya College of Eng.',
     icon: (
       <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+        <path d="M3 21h18M3 7v14M21 7v14M6 11h2M6 15h2M16 11h2M16 15h2M12 3L2 8h20L12 3z"/>
       </svg>
     ),
   },
@@ -71,9 +71,10 @@ export default function About() {
                 transition={{ delay: 0.1, duration: 0.8 }}
                 className="font-['DM_Sans',sans-serif] text-slate-300 text-lg leading-relaxed"
               >
-                I'm an <span className="text-[#00f5ff] font-semibold">AI/ML Engineer</span> with a passion for building 
-                intelligent systems that solve real-world problems at scale. With over 1 year of production experience, 
-                I specialize in architecting end-to-end machine learning pipelines and LLM-based applications.
+                I'm an <span className="text-[#00f5ff] font-semibold">AI/ML Engineer</span> with 1+ years of production experience 
+                building and deploying scalable ML systems, including LLM-based applications and OCR AI platforms. 
+                Experienced in architecting end-to-end pipelines, improving inference latency by <span className="text-[#00f5ff]">40ms</span>, 
+                and delivering multi-tenant solutions with <span className="text-[#00f5ff]">95%+</span> extraction accuracy in production.
               </motion.p>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -81,9 +82,9 @@ export default function About() {
                 transition={{ delay: 0.2, duration: 0.8 }}
                 className="font-['DM_Sans',sans-serif] text-slate-400 text-base leading-relaxed"
               >
-                My work spans from building multi-tenant helpdesk platforms and AI-driven costing tools to 
-                deploying OCR AI platforms with 95%+ extraction accuracy. I thrive at the intersection of 
-                research and engineering — turning cutting-edge models into reliable production systems.
+                My work spans building agentic invoice processing and exception management workflows with 
+                LangGraph, multi-tenant helpdesks with tenant-isolated data and RBAC, and AI-driven FOB costing 
+                tools utilizing OpenAI and Gemini. I have a strong hands-on background across Django, React, and GenAI.
               </motion.p>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -91,9 +92,9 @@ export default function About() {
                 transition={{ delay: 0.3, duration: 0.8 }}
                 className="font-['DM_Sans',sans-serif] text-slate-400 text-base leading-relaxed"
               >
-                When I'm not optimizing inference latency or engineering RAG pipelines, I'm building 
-                full-stack platforms that scale to thousands of users — combining my love for both 
-                backend intelligence and clean frontend experiences.
+                Whether it is implementing automated 2-way and 3-way matching pipelines, multi-threaded 
+                backend processing for concurrent AI requests, or CI/CD deployment automation, I focus on 
+                delivering measurable performance, reliability, and scale.
               </motion.p>
 
               {/* Code block decoration */}
@@ -112,8 +113,9 @@ export default function About() {
                 <div className="space-y-1.5 text-xs">
                   <p><span className="text-purple-400">class</span> <span className="text-[#00f5ff]">ShubhamYadav</span><span className="text-white">:</span></p>
                   <p className="pl-4"><span className="text-slate-500">"""AI/ML Engineer | Full Stack Developer"""</span></p>
-                  <p className="pl-4"><span className="text-slate-300">skills</span> <span className="text-white">=</span> <span className="text-yellow-400">["PyTorch", "LLMs", "RAG", "FastAPI"]</span></p>
-                  <p className="pl-4"><span className="text-slate-300">passion</span> <span className="text-white">=</span> <span className="text-green-400">"Building intelligent systems"</span></p>
+                  <p className="pl-4"><span className="text-slate-300">education</span> <span className="text-white">=</span> <span className="text-green-400">"B.Tech, Dronacharya College of Eng."</span></p>
+                  <p className="pl-4"><span className="text-slate-300">skills</span> <span className="text-white">=</span> <span className="text-yellow-400">["Django", "React", "LangGraph", "GenAI", "Docker"]</span></p>
+                  <p className="pl-4"><span className="text-slate-300">passion</span> <span className="text-white">=</span> <span className="text-cyan-400">"Architecting scalable ML & Agentic systems"</span></p>
                   <p className="pl-4"><span className="text-slate-300">available</span> <span className="text-white">=</span> <span className="text-[#00f5ff]">True</span></p>
                 </div>
               </motion.div>

@@ -4,32 +4,19 @@ import { useInView } from 'react-intersection-observer'
 
 const experiences = [
   {
-    company: 'Ipai Technology Solutions LLP',
-    role: 'Associate Software Dev.',
+    company: 'Credent Infotech Solutions LLP',
+    role: 'Associate Software Developer',
     period: 'April 2025 – Present',
     location: 'Delhi, India',
     type: 'Full-time',
     color: '#00f5ff',
     achievements: [
-      'Developed a multi-tenant helpdesk platform with tenant-isolated data and role-based access using the MERN stack, improving API performance by 50–60%.',
-      'Built an AI-driven FOB costing tool for tech packs with region-wise costing using OpenAI and Gemini APIs.',
-      'Implemented multi-threaded backend processing for concurrent AI requests, improving REST API response time by 60%.',
-      'Implemented automated CI/CD pipeline reducing deployment and release cycle time by 40%.',
+      'Developed a multi-tenant helpdesk platform with tenant-isolated data and RBAC (Role-Based Access Control) using the MERN stack. Optimized backend APIs improving API performance by 50ms–60ms.',
+      'Enhanced scalability and response time by optimizing request handling, pagination.',
+      'Built an AI-driven FOB costing tool for tech packs with region-wise costing using OpenAI and Gemini. Implemented multi-threaded backend processing to handle concurrent AI requests, improving REST API response time by ~60ms.',
+      'Implemented an automated CI/CD pipeline for build, testing, and deployment. Reduced deployment and release cycle time by 40ms improving reliability and delivery speed.',
     ],
-    tags: ['MERN Stack', 'OpenAI', 'Gemini', 'MongoDB', 'CI/CD'],
-  },
-  {
-    company: 'Ipai Technology Solutions LLP',
-    role: 'Full Stack Intern',
-    period: 'Jan 2025 – Mar 2025',
-    location: 'Delhi, India',
-    type: 'Internship',
-    color: '#7c3aed',
-    achievements: [
-      'Developed a Business Operation Management System (BOMS) using React.js for frontend and Django for backend, improving operational efficiency by 30%.',
-      'Implemented automated CI/CD pipeline reducing deployment cycle time by 25%.',
-    ],
-    tags: ['React.js', 'Django', 'REST APIs', 'CI/CD'],
+    tags: ['MERN Stack', 'OpenAI & Gemini', 'Multi-Threading', 'RBAC', 'CI/CD', 'REST APIs'],
   },
 ]
 

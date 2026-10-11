@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
-const roles = ['AI/ML Engineer', 'Full Stack Developer',  'RAG Specialist', 'MLOps Engineer']
+const roles = ['AI/ML Engineer', 'Full Stack Developer', 'GenAI Specialist', 'MLOps Engineer']
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0)
@@ -86,18 +86,19 @@ export default function Hero() {
             variants={itemVariants}
             className="font-['DM_Sans',sans-serif] text-slate-400 text-lg max-w-xl leading-relaxed mb-10"
           >
-            Building scalable ML systems & LLM-based applications that push boundaries.
-            1+ year of production experience improving inference latency by{' '}
-            <span className="text-[#00f5ff]">40%</span> and delivering{' '}
+            AI/ML Engineer with 1+ years of production experience building and deploying scalable ML systems,
+            including LLM-based applications and OCR AI platforms. Experienced in architecting end-to-end pipelines,
+            improving inference latency by <span className="text-[#00f5ff]">40ms</span>, and delivering multi-tenant solutions with{' '}
             <span className="text-[#00f5ff]">95%+</span> extraction accuracy.
           </motion.p>
 
           {/* Stats row */}
           <motion.div variants={itemVariants} className="flex flex-wrap gap-8 mb-12">
             {[
-              { value: '1+', label: 'Year Experience' },
-              { value: '40%', label: 'Latency Reduced' },
-              { value: '95%+', label: 'Accuracy' },
+              { value: '1+', label: 'Years Experience' },
+              { value: '40ms', label: 'Latency Reduced' },
+              { value: '95%+', label: 'Extraction Accuracy' },
+              { value: '1000+', label: 'Users Scaled' },
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col">
                 <span className="font-['Syne',sans-serif] text-3xl font-bold text-gradient-cyan">{stat.value}</span>
